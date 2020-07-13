@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { breakpoints } from '../../utils/styles'
 
 export const Wrapper = styled.div`
-  background: rebeccapurple;
+  background: #00ace6;
   margin-bottom: 1.45rem;
 `
 
@@ -30,10 +30,10 @@ export const MenuLink = styled(Link)`
 
 export const CartCounter = styled.span`
   background-color: white;
-  color: #663399;
+  color: #00ace6;
   border-radius: 20px;
   padding: 0 10px;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   float: right;
   margin: -10px;
   z-index: 20;

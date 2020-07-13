@@ -2,15 +2,44 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import SEO from '~/components/seo'
-import ProductGrid from '~/components/ProductGrid'
-
+//import ProductGrid from '~/components/ProductGrid'
+   //button not working
+   
 const IndexPage = () => (
   <>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi mask people</h1>
-    <p>Welcome to your new Shop powered by Gatsby and Shopify.</p>
-    <ProductGrid />
-    <Link to="/page-2/">Go to page 2</Link>
+    <center><h1>Masks For All</h1></center>
+    <p>Protect Your Family, Protect Yourself, Protect Others.</p>
+    
+    <br></br>
+    <br></br>
+    <br></br>
+
+
+    <html>
+    <body>
+    <center><button type="submit" onclick="location.href='/face-masks/'">View Masks</button></center>
+
+    </body>
+    </html>
+
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <Link to="/face-masks/">Face Masks</Link>
+    <br></br>
+    <Link to="/about-us/">About Us</Link>
+    <br></br>
+    <Link to="/FAQ/">FAQ</Link>
+    <br></br>
+    <Link to="/wear-mask/">How To Wear A Mask</Link>
+    
+    
+
+    <br></br>
+    <br></br>
+    <br></br>
   </>
 )
 
