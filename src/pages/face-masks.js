@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import SEO from '~/components/seo'
 import ProductGrid from '~/components/ProductGrid'
 
-const SecondPage = () => (
+const MasksPage = () => (
   <>
     <SEO title="Face Masks" />
     <h1>Face Masks</h1>
@@ -21,4 +21,4 @@ const SecondPage = () => (
   </>
 )
 
-export default SecondPage
+export default MasksPage

@@ -3,13 +3,13 @@ import { Link } from 'gatsby'
 
 import SEO from '~/components/seo'
 
-const SecondPage = () => (
+const FAQPage = () => (
   <>
     <SEO title="FAQ" />
     <h1>FAQ</h1>
-    <p>Welcome to page 2</p>
+    <p>Frequently Asked Questions</p>
     <Link to="/">Go back to the homepage</Link>
   </>
 )
 
-export default SecondPage
+export default FAQPage

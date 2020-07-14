@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import Img from 'gatsby-image'
 import SEO from '~/components/seo'
 //import ProductGrid from '~/components/ProductGrid'
    //button not working
+   //how to not have more than one export default
    
+
+
 const IndexPage = () => (
   <>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -14,7 +17,7 @@ const IndexPage = () => (
     <br></br>
     <br></br>
     <br></br>
-
+    
 
     <html>
     <body>
@@ -34,6 +37,8 @@ const IndexPage = () => (
     <Link to="/FAQ/">FAQ</Link>
     <br></br>
     <Link to="/wear-mask/">How To Wear A Mask</Link>
+    <br></br>
+    <Link to="/index2/">Another Page</Link>
     
     
 
