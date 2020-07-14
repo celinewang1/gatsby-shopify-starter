@@ -2,7 +2,7 @@
     <head>
 <style>
 h1 {
-	color: #00ace6;
+	color: #0099cc;
 	text-align: center;
 	font-size: 100px;
 	font-family: arial;
@@ -13,14 +13,18 @@ h1 {
 	filter: alpha(opacity=100);
 }
 div.transbox {
-	margin: 1px;
+    margin: 1px;
+
 }
 div.transbox h3 {
 	font-weight: normal;
 	font-style: italic;
-	color: linen;
+	color: gray;
 	text-align: center;
-	font-size: 30px;
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+
 }
 img {
 	position: absolute;
@@ -28,21 +32,24 @@ img {
 	filter: alpha(opacity=50);
 }
 .image {
-	position: relative;
+	position: absolute;
 	width: 100%;
 }
 .button {
     background-color: #ffffff; /*transparent*/
-		opacity: .6;
+	opacity: .6;
     border: none;
     color: none;
     padding: 16px 32px;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 18px;
-		font-weight: 600;
-		font-family: arial;
-    margin: 330px 600px;
+	font-weight: 600;
+    font-family: arial;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    margin: 400px 700px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -61,9 +68,9 @@ img {
     }
 body {
 		    background-image: url("mask_homepage.jpg");
-			background-size: cover;
+			background-size: contain;
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: center top;
 		}
 
 </style>
@@ -86,7 +93,7 @@ body {
 
 <script>
 function myFunction() {
-    window.location.href = "http://localhost:8000/face-masks/"
+    window.location.href = "http://localhost:8000/face-masks/";
 }
 
 </script>

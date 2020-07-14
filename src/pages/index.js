@@ -4,8 +4,6 @@ import Img from 'gatsby-image'
 import SEO from '~/components/seo'
 //import ProductGrid from '~/components/ProductGrid'
    //button not working
-   //how to not have more than one export default
-   
 
 
 const IndexPage = () => (
@@ -21,7 +19,9 @@ const IndexPage = () => (
 
     <html>
     <body>
-    <center><button type="submit" onclick="location.href='/face-masks/'">View Masks</button></center>
+    <center><Link to="/face-masks/">
+      <button type="submit" onclick="location.href='file:///Users/celinewang/Documents/github/gatsby-shopify-starter/src/pages/homepage.html'">
+        View Masks</button></Link></center>
 
     </body>
     </html>
