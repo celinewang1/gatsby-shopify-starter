@@ -67,6 +67,7 @@ const ProductGrid = () => {
                 />)}
             </Link>
             <Title>{title}</Title>
+            <br></br>
             <PriceTag>{getPrice(firstVariant.price)}</PriceTag>
           </Product>
         ))

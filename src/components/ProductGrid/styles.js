@@ -20,12 +20,6 @@ export const Product = styled.div`
   font-family: passenger display;
 `
 
-export const Title = styled.span`
-  font-weight: 300;
-  font-size: 1.2rem;
-  text-align: center;
-`
-
 export const PriceTag = styled.span`
   font-weight: 300;
   font-size: 1rem;
@@ -37,3 +31,10 @@ export const PriceTag = styled.span`
     content: ''
   }
 `
+
+export const Title = styled.span`
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+`
+

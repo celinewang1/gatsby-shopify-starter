@@ -11,6 +11,8 @@ const LineItem = props => {
     store: { client, checkout },
   } = useContext(StoreContext)
 
+
+
   const variantImage = item.variant.image ? (
     <img
       src={item.variant.image.src}
@@ -38,10 +40,15 @@ const LineItem = props => {
       <p>
         {item.title}
         {`  `}
-        {item.variant.title === !'Default Title' ? item.variant.title : ''}
+        {item.variant.title === !'50 masks' ? item.variant.title : ''}
+        {item.variant.title === !'100 masks' ? item.variant.title : ''}
+        {item.variant.title === !'200 masks' ? item.variant.title : ''}
+        {item.variant.title === !'500 masks' ? item.variant.title : ''}
       </p>
-      {selectedOptions}
-      {item.quantity}
+      {/* {selectedOptions} */}
+
+      Quantity: {item.quantity}
+
       <button onClick={handleRemove}>Remove</button>
     </Wrapper>
   )

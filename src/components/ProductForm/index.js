@@ -100,22 +100,20 @@ const ProductForm = ({ product }) => {
       <h3>{price}</h3>
       {options.map(({ id, name, values }, index) => (
         <React.Fragment key={id}>
-          <label htmlFor={name}>{name} </label>
+          <label htmlFor="numMasks">Number of Masks </label>
           <select
-            name={name}
+            name="numMasks"
+            id="numMasks"
             key={id}
             onChange={event => handleOptionChange(index, event)}
           >
-            {values.map(value => (
-              <option
-                value={value}
-                key={`${name}-${value}`}
-                disabled={checkDisabled(name, value)}
-              >
-                {value}
-              </option>
-            ))}
+            <option>50</option>
+            <option>100</option>
+            <option>200</option>
+            <option>500</option>
+
           </select>
+          <br />
           <br />
         </React.Fragment>
       ))}
@@ -130,6 +128,8 @@ const ProductForm = ({ product }) => {
         value={quantity}
       />
       <br />
+      <br />
+
       <button
         type="submit"
         disabled={!available || adding}

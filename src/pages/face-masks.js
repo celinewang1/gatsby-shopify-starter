@@ -17,7 +17,7 @@ const MasksPage = () => (
     <br></br>
     <br></br>
 
-    <Link to="/">Go back to the homepage</Link>
+    {/* <Link to="/">Go back to the homepage</Link> */}
   </>
 )
 

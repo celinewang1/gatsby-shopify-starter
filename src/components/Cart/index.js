@@ -28,13 +28,32 @@ const Cart = () => {
       <h2>Total</h2>
       <p>$ {checkout.totalPrice}</p>
       <br />
+      <br />
+      <br />
+
+
+
       <button
         onClick={handleCheckout}
         disabled={checkout.lineItems.length === 0}
       >
         Check out
       </button>
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+        
     </div>
+       
   )
 }
 
