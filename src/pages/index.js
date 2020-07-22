@@ -10,7 +10,17 @@ import {
   Background,
   Hero,
   OurMasks,
-  Title
+  ViewMasksButton,
+  ViewMasksHover,
+  ViewMasksText,
+  ProtectFamily,
+  ProtectSelf,
+  ProtectOthers,
+  ProtectFamilyText,
+  ProtectSelfText,
+  ProtectOthersText,
+  Title,
+  Links
 } from './styles'
 
 
@@ -34,6 +44,37 @@ const IndexPage = () => {
   return (
     <>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+
+
+    <Hero>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Title>Masks for All</Title>
+      <br></br>
+      <br></br>
+      <Link to="/face-masks/">
+      <center><ViewMasksButton class="view-masks-button" onmouseover="ViewMasksHover" type="submit">
+      <ViewMasksText>VIEW MASKS</ViewMasksText>
+      </ViewMasksButton></center>
+      </Link>
+      <br></br>
+      <br></br>
+      <br></br>
+      <ProtectFamily type="button"><ProtectFamilyText>Protect Your Family</ProtectFamilyText></ProtectFamily>
+      <ProtectSelf type="button"><ProtectSelfText>Protect Yourself</ProtectSelfText></ProtectSelf>
+      <ProtectOthers type="button"><ProtectOthersText>Protect Others</ProtectOthersText></ProtectOthers>
+
+
+    </Hero>
+
+{/* 
     <Hero>
     <Title> Masks For All </Title>
     <p>Protect Your Family, Protect Yourself, Protect Others.</p>
@@ -48,21 +89,31 @@ const IndexPage = () => {
       View Masks</button></Link></center>
     </body>
     </Hero>
-    <br></br>
+    <br></br> */}
 
-    <footer>
-    <Link to="/face-masks/">Face Masks</Link>
-    <br></br>
-    <Link to="/about-us/">About Us</Link>
-    <br></br>
-    <Link to="/FAQ/">FAQ</Link>
-    <br></br>
-    <Link to="/wear-mask/">How To Wear A Mask</Link>
-    <br></br>
-    <Link to="/anotherPage/">Another Page</Link>
-    <br></br>
-    <Link to="/counter/">Counter</Link>
-    </footer>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+    
+    <Links>
+      <Link to="/face-masks/">Face Masks</Link>
+      <br></br>
+      <Link to="/about-us/">About Us</Link>
+      <br></br>
+      <Link to="/FAQ/">FAQ</Link>
+      <br></br>
+      <Link to="/wear-mask/">How To Wear A Mask</Link>
+      <br></br>
+      <Link to="/anotherPage/">Another Page</Link>
+      <br></br>
+      <Link to="/counter/">Counter</Link>
+    </Links>
   </>
   )
 }
