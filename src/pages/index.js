@@ -10,15 +10,17 @@ import {
   Background,
   Hero,
   OurMasks,
-  ViewMasksButton,
+  LargeButton,
   ViewMasksHover,
-  ViewMasksText,
-  ProtectFamily,
-  ProtectSelf,
-  ProtectOthers,
-  ProtectFamilyText,
-  ProtectSelfText,
-  ProtectOthersText,
+  HeroImage3Buttons,
+  HeroImageButton,
+  HeroImageText,
+  ImageButtonsGridContainer,
+  ImageButtonsGridItem,
+  SecondGridContainer,
+  SecondGridItem1,
+  SecondGridItem2,
+  SecondGridItem3,
   Title,
   Links
 } from './styles'
@@ -45,33 +47,38 @@ const IndexPage = () => {
     <>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-
     <Hero>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Title>Masks for All</Title>
-      <br></br>
-      <br></br>
+      <Title>Masks For All</Title>
       <Link to="/face-masks/">
-      <center><ViewMasksButton class="view-masks-button" onmouseover="ViewMasksHover" type="submit">
-      <ViewMasksText>VIEW MASKS</ViewMasksText>
-      </ViewMasksButton></center>
+      <center><LargeButton>BUY MASKS</LargeButton></center>
       </Link>
-      <br></br>
-      <br></br>
-      <br></br>
-      <ProtectFamily type="button"><ProtectFamilyText>Protect Your Family</ProtectFamilyText></ProtectFamily>
-      <ProtectSelf type="button"><ProtectSelfText>Protect Yourself</ProtectSelfText></ProtectSelf>
-      <ProtectOthers type="button"><ProtectOthersText>Protect Others</ProtectOthersText></ProtectOthers>
 
+      <ImageButtonsGridContainer>
+        <ImageButtonsGridItem>Protect Your Family</ImageButtonsGridItem>
+        <ImageButtonsGridItem>Protect Yourself</ImageButtonsGridItem>
+        <ImageButtonsGridItem>Protect Others</ImageButtonsGridItem>
+      </ImageButtonsGridContainer>
 
+      <SecondGridContainer>
+        <SecondGridItem3>hello</SecondGridItem3>
+        <SecondGridItem1>Our Masks</SecondGridItem1>
+        <SecondGridItem2>We supply Level 2 medical face masks worn by doctors, nurses, and medical professionals.  These masks are now available to the general public.  
+        <br></br>
+        - ASTM Level 2 Rated Medical Face Masks
+        <br></br>
+        - Bacteria Filtration Efficiency Greater Than 99%
+        <br></br>
+        - Particulate Filtration Efficiency Greater Than 99%
+        <br></br>
+        - 3-Ply / 3 Layer Design:  Liquid Resistance Layer, Flame & Filtration Layer, and soft Inner Layer for comfort.
+        <br></br>
+        - One Size Fits Most:  These masks were not designed to fully seal against the face.  As long as the masks cover from the bridge of the nose to the bottom of the chin, they will provide excellent protection.</SecondGridItem2>
+      </SecondGridContainer>
+      {/* <HeroImage3Buttons>
+      <HeroImageButton type="button"><HeroImageText>Protect Your Family</HeroImageText></HeroImageButton>
+      <HeroImageButton type="button"><HeroImageText>Protect Yourself</HeroImageText></HeroImageButton>
+      <HeroImageButton type="button"><HeroImageText>Protect Others</HeroImageText></HeroImageButton>
+      </HeroImage3Buttons> */}
     </Hero>
 
 {/* 
@@ -90,16 +97,6 @@ const IndexPage = () => {
     </body>
     </Hero>
     <br></br> */}
-
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
     
     <Links>
       <Link to="/face-masks/">Face Masks</Link>
